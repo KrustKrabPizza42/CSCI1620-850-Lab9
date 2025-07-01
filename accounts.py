@@ -54,7 +54,7 @@ class Account():
 
     def __str__(self):
 
-        return f'Account Name = {self.get_name()}, Account Ballance = ${self.get_balance():0.2f}'
+        return f'Account Name = {self.get_name()}, Account Balance = {self.get_balance():0.2f}'
     
 class SavingAccount(Account):
 
@@ -119,7 +119,7 @@ class SavingAccount(Account):
 
     def __str__(self):
 
-        return f'Savings Account: Account Name = {self.get_name()}, Account Balance = ${self.get_balance():0.2f}'
+        return f'SAVING ACCOUNT: Account Name = {self.get_name()}, Account Balance = {self.get_balance():0.2f}'
 
 
     
