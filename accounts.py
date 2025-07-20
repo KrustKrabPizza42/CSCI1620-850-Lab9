@@ -5,7 +5,9 @@ class Account():
 
         self.__account_name = name
 
-        self.set_balance(balance)
+        self.__account_balance = balance
+
+        self.set_balance(self.__account_balance)
 
 
     def deposit(self, amount):
@@ -119,7 +121,7 @@ class SavingAccount(Account):
 
     def __str__(self):
 
-        return f'SAVING ACCOUNT: Account Name = {self.get_name()}, Account Balance = {self.get_balance():0.2f}'
+        return f'SAVING ACCOUNT: {super().__str__()}'
 
 
     
